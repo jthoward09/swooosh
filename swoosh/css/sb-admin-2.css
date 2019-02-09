@@ -79,6 +79,11 @@ body {
   height: 60px;
 }
 
+.bull-head-img {
+  width: 115px;
+  height: 70px;
+}
+
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
