@@ -74,6 +74,11 @@ body {
   outline: 0 !important;
 }
 
+.bull-head {
+  width: 60px;
+  height: 60px;
+}
+
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
