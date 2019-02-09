@@ -1,0 +1,26 @@
+{
+  "name": "swoosh-app",
+  "version": "1.0.0",
+  "description": "Swooosh App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jthoward09/swooosh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jthoward09/swooosh/issues"
+  },
+  "homepage": "https://github.com/jthoward09/swooosh#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.11",
+    "nodemon": "^1.18.10"
+  }
+}
