@@ -64,4 +64,8 @@
         });
     });
 
+    $.getJSON('js/nba.json').done(function(nba) {
+        console.log(nba);
+    });
+
 })(jQuery); // End of use strict
