@@ -46,4 +46,22 @@
     e.preventDefault();
   });
 
+    $.getJSON('js/schedule.json').done(function(teamList) {
+      var todaysDate = new Date();
+      var games = teamList.games;
+      var todayConverted = todaysDate.getFullYear() + '-' + (todaysDate.getMonth() + 1) + '-' + todaysDate.getDate();
+      var output = "";
+
+        games.forEach(function (game) {
+          var schedule = new Date(game.scheduled);
+          var scheduleConverted = schedule.getFullYear() + '-' + (schedule.getMonth() + 1) + '-' + schedule.getDate();
+
+          if (todayConverted === scheduleConverted) {
+            output += `<button class="btn btn-info btn-lg col-12 " data-toggle="modal" data-target="#myModal" style="margin-bottom: 10px;"><div> ${game.home.name} <div> vs <div> ${game.away.name} </div></button>`
+          }
+
+          document.getElementById("games").innerHTML = output;
+        });
+    });
+
 })(jQuery); // End of use strict
