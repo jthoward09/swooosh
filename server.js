@@ -4,7 +4,6 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/swoosh/index.html')
-
 });
 
 app.use(bodyParser.json());
