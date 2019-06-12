@@ -7,8 +7,13 @@ app.get("/", (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.use(express.static(__dirname + "/swoosh/index.html"));
+app.use(express.static("swoosh"));
 
-app.listen(8000, () => {
-  console.log("Example app listening on port 8000!");
+// app.listen(8000, () => {
+//   console.log("Example app listening on port 8000!");
+// });
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
