@@ -2,6 +2,9 @@
   "name": "swoosh-app",
   "version": "1.0.0",
   "description": "Swooosh App",
+  "engines": {
+    "node": "12.2.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
